@@ -18,10 +18,10 @@ read_csv(file_url, skip = 1, na = "***") %>%
   labs(
     x = "Año",
     y = "Anomalía de temperatura (C°)",
-    title = "GLOBAL LAND-OCEAN TEMPERATURE INDEX",
-    subtitle = "Fuente: NASA's Goddard Institute for Space Studies (GISS).\nCredit: NASA/GISS"
+    title = "Índice de temperaturas del Hemisferio Sur\n1880 - 2022",
+    subtitle = "Fuente: NASA's Goddard Institute for Space Studies (GISS).\nCréditos: NASA/GISS"
   )+
-    theme_light()+
+    theme()+
   theme(
     axis.ticks = element_blank(),
     plot.title.position = "plot",
