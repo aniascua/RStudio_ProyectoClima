@@ -33,6 +33,4 @@ read_csv(file_url, skip = 1, na = "***") %>%
     legend.margin = margin(0,0,0,0)
   )
 
-
 ggsave("figures/temperaturePlot.png", width=6,height=4)
-
