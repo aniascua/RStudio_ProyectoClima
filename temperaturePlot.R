@@ -19,8 +19,10 @@ read_csv(file_url, skip = 1, na = "***") %>%
   )+
     theme_light()+
   theme(
-    axis.ticks = element_blank()
-    
+    axis.ticks = element_blank(),
+    plot.title.position = "plot",
+    plot.title = element_text(margin = margin(b=10), color = "red", face="bold"),
+    plot.subtitle = element_text(size=8, margin = margin(b=10))
   )
 
 ggsave("figures/temperaturePlot.png", width=6,height=4)
